@@ -1,7 +1,7 @@
 ## 전체 회원 정보
-### AdminDAO()
 
 
+##### AdminDAO()
 ```java
 // 전체 회원 정보
 	public ArrayList<String[]> selectAllMember(int pageNum, int listLimit) {
@@ -74,3 +74,27 @@
 	}
   
   ```
+
+##### MemberListService
+```java
+	public ArrayList<String[]> getMemberList(int pageNum, int listLimit) {
+		System.out.println("MemberListService - getMemberList()");
+		
+		ArrayList<String[]> memberList  = null;
+		
+		Connection con = getConnection();
+		
+		AdminDAO  adminDAO = AdminDAO.getInstance();
+		
+		adminDAO.setConnection(con);
+		
+		// 게시물 목록 조회
+		memberList = adminDAO.selectAllMember(pageNum, listLimit);
+		
+		close(con);
+		
+		return memberList;
+	}
+	```
+	
+	
