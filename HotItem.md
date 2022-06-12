@@ -47,7 +47,7 @@
 	</div>
 	
  	<div>
- 		놀고싶어라,,   // 밑으로 밀리는 현상을 어떻게 없앨수 있을까...??
+ 		밑으로 밀린다..   // 밑으로 밀리는 현상을 어떻게 없앨수 있을까...??
  	</div>
 	<script>
 		var next = document.getElementById("next");
