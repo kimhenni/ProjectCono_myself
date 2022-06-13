@@ -105,7 +105,7 @@
  </body>
  
  
- ```xml
+---------- .xml ----------
  <!-- 실시간 인기상품 -->
 	<select id="selectHotItemList" resultType="com.itwillbs.cono.vo.ItemDTO">
 		SELECT CAST(@rownum:=@rownum+1  AS UNSIGNED) AS num, item_title, item_readCnt
